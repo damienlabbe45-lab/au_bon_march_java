@@ -23,6 +23,6 @@ public abstract class Product {
         return "récolté il y a " + pickingDate.toString() + ". C'est comestible pendant " + shelfLifeDays;
     }
 
-    
+    public abstract void calculateExpirationDate();
 
 }
