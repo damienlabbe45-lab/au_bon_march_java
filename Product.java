@@ -19,6 +19,10 @@ public abstract class Product {
         return nameProduct + " à " + price ;
     }
 
+    public String conso(){
+        return "récolté il y a " + pickingDate.toString() + ". C'est comestible pendant " + shelfLifeDays;
+    }
+
     
 
 }
