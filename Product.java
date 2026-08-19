@@ -15,13 +15,10 @@ public abstract class Product {
     }
 
     @Override
-    protected String toString() {
+    public String toString() {
         return nameProduct + " à " + price ;
     }
 
-
-
     
 
-    
 }
