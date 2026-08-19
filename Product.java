@@ -14,6 +14,10 @@ public abstract class Product {
         this.shelfLifeDays = shelfLifeDays;
     }
 
+    @Override
+    protected String toString() {
+        return nameProduct + " à " + price ;
+    }
 
 
 
