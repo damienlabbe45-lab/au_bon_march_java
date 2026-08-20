@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 
 public abstract class Product {
     double price;
@@ -12,6 +11,22 @@ public abstract class Product {
         this.nameProduct = nameProduct;
         this.pickingDate = pickingDate;
         this.shelfLifeDays = shelfLifeDays;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getNameProduct() {
+        return nameProduct;
+    }
+
+    public LocalDate getPickingDate() {
+        return pickingDate;
+    }
+
+    public int getShelfLifeDays() {
+        return shelfLifeDays;
     }
 
     @Override
