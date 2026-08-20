@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 public interface Consumable {
 
-    public boolean isRipe();
+    public boolean isRipe(LocalDate dateVerification);
 
     public boolean isExpired(LocalDate dateVerification);
 
