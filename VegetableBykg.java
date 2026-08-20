@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class VegetableBykg extends Product implements Consumable{
     double weight;
@@ -27,7 +28,7 @@ public class VegetableBykg extends Product implements Consumable{
     }
 
     public long daysRemaingBeforeExpiration(LocalDate dateVerification){
-        return pickingDate.plusDays(shelfLifeDays).minusDays(dateVerification).toEpochDay();
+        return ChronoUnit.DAYS.between(pickingDate.plusDays(shelfLifeDays), dateVerification);
     }
     
 }
