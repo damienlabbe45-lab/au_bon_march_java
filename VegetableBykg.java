@@ -18,13 +18,9 @@ public class VegetableBykg extends Product implements Consumable{
         System.out.println("le produit " + nameProduct +" est à consommer avant le " + pickingDate.plusDays(shelfLifeDays).toString());
     }
 
-    
+    public boolean isExpired(LocalDate dateVerification){
+        return pickingDate.plusDays(shelfLifeDays).isAfter(dateVerification);
     }
-        
-
-
-
-
     
     
 }
