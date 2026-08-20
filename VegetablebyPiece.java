@@ -1,10 +1,10 @@
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class VegetableBypiece extends Product implements Consumable{
+public class VegetableByPiece extends Product implements Consumable{
     int unit;
 
-    public  VegetableBypiece(double price, String nameProduct, LocalDate pickingDate, int shelfLifeDays, int unit) {
+    public  VegetableByPiece(double price, String nameProduct, LocalDate pickingDate, int shelfLifeDays, int unit) {
         super(price, nameProduct, pickingDate, shelfLifeDays);
         this.unit = unit;
     }
