@@ -25,5 +25,9 @@ public class VegetableBykg extends Product implements Consumable{
     public boolean isRipe(LocalDate dateVerification){
         return pickingDate.plusDays(4).isEqual(dateVerification);
     }
+
+    public long daysRemaingBeforeExpiration(LocalDate dateVerification){
+        return pickingDate.plusDays(shelfLifeDays).minusDays(dateVerification).toEpochDay();
+    }
     
 }
