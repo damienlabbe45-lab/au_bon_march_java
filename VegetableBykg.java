@@ -14,7 +14,12 @@ public class VegetableBykg extends Product implements Consumable{
 
     }
 
+    public void calculateExpirationDate(){
+        System.out.println("le produit " + nameProduct +" est à consommer avant le " + pickingDate.plusDays(shelfLifeDays).toString());
+    }
+
     
+    }
         
 
 
