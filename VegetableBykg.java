@@ -8,6 +8,12 @@ public class VegetableBykg extends Product implements Consumable{
         this.weight = weight;
     }
 
+    public void weight_minus(double weightminus){
+        if (weight >= weightminus) weight = weight - weightminus;
+        else System.out.println("il me reste juste que " + weight + ".");
+
+    }
+
     
         
 
