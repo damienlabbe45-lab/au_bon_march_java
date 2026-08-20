@@ -30,5 +30,19 @@ public class VegetableBykg extends Product implements Consumable{
     public long daysRemaingBeforeExpiration(LocalDate dateVerification){
         return ChronoUnit.DAYS.between(pickingDate.plusDays(shelfLifeDays), dateVerification);
     }
+
+    public double weightpay(double weight){
+        if ( this.weight>= weight){
+            weight_minus(weight);
+            return (price * weight);
+        }
+        return -0.90;
+    
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + weight + "kg.";
+    }
     
 }
